@@ -1,4 +1,4 @@
-Laravel Eloquent Query Cache & Table Cache
+Laravel Eloquent Query & Table Cache
 ===================================
 
 Laravel Query & Table Cache.
