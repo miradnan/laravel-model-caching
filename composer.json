@@ -1,9 +1,9 @@
 {
-    "name": "miradnan/laravel-model-cache",
+    "name": "miradnan/laravel-model-caching",
     "description": "Adding cache for Laravel Eloquent queries",
     "keywords": ["laravel", "caching", "eloquent", "remember", "query", "sql", "model caching"],
     "license": "MIT",
-    "homepage": "https://github.com/miradnan/miradnan/laravel-model-cache",
+    "homepage": "https://github.com/miradnan/laravel-model-caching",
     "authors": [
         {
             "name": "Mir Adnan",
