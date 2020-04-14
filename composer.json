@@ -1,0 +1,41 @@
+{
+    "name": "miradnan/laravel-model-cache",
+    "description": "Adding cache for Laravel Eloquent queries",
+    "keywords": ["laravel", "caching", "eloquent", "remember", "query", "sql", "model caching"],
+    "license": "MIT",
+    "homepage": "https://github.com/miradnan/miradnan/laravel-model-cache",
+    "authors": [
+        {
+            "name": "Mir Adnan",
+            "homepage": "https://twitter.com/Mir_Adnan",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "illuminate/database": "^6.0|^7.0",
+        "illuminate/support": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "miradnan\\QueryCache\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "miradnan\\QueryCache\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "~4.2.0",
+        "orchestra/database": "~4.2.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
