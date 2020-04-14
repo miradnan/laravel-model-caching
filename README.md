@@ -11,7 +11,7 @@ This package adds caching support for **all** query methods.
 $ composer require miradnan/laravel-model-caching
 ```
 
-Each model that will accept query-by-query caching will have to use the `Rennokki\QueryCache\Traits\QueryCacheable` trait.
+Each model that will accept query-by-query caching will have to use the `miradnan\QueryCache\Traits\QueryCacheable` trait.
 
 ```php
 use miradnan\QueryCache\Traits\QueryCacheable;
@@ -147,12 +147,12 @@ modify this function will lead to an overlap.
 
 This can happen in case you are creating your own Builder class for another database drivers or simply to ease out your app query builder for more flexibility.
 
-To solve this, all you have to do is to add the `\Rennokki\QueryCache\Traits\QueryCacheModule` trait and the `\Rennokki\QueryCache\Contracts\QueryCacheModuleInterface` interface to your `Builder` class. Make sure that the model will no longer use the original `QueryCacheable` trait.
+To solve this, all you have to do is to add the `\miradnan\QueryCache\Traits\QueryCacheModule` trait and the `\miradnan\QueryCache\Contracts\QueryCacheModuleInterface` interface to your `Builder` class. Make sure that the model will no longer use the original `QueryCacheable` trait.
 
 ```php
-use Rennokki\QueryCache\Traits\QueryCacheModule;
+use miradnan\QueryCache\Traits\QueryCacheModule;
 use Illuminate\Database\Query\Builder as BaseBuilder; // the base laravel builder
-use Rennokki\QueryCache\Contracts\QueryCacheModuleInterface;
+use miradnan\QueryCache\Contracts\QueryCacheModuleInterface;
 
 // MyCustomBuilder.php
 class MyCustomBuilder implements QueryCacheModuleInterface
